@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="" target="_blank" method="POST" autocomplete="on">
+      <label for="fname">first name</label>
+      <input type="text" id="fname" name="fname" placeholder="first name" />
+      <br />
+      <br />
+      <label for="lname">last name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="last name"
+      /><br />
+      <br />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+    <br />
+    <hr />
+
+    <form action=" " target="_blank" method="post" autocomplete="on">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="name" />
+      <br />
+      <hr />
+      <label for="car">Choose a car</label>
+      <select name="cars" id="cars">
+        <!-- size="5",multiple -->
+        <option value="volvo">volvo</option>
+        <option value="audi">audi</option>
+        <option value="bmw">bmw</option>
+        <option value="tesla">tesla</option>
+        <option value="fiat" selected>Fiat</option>
+        <!--To define a pre-selected option, add the selected attribute to the option:
+
+            -->
+      </select>
+      <br />
+      <br />
+      <br />
+      <textarea name="message" rows="10" cols="30">
+            anything you will to say us
+         </textarea
+      >
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    </form>
+    <br />
+    <br />
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="jay" /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          value="Bhogayata"
+        /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <br />
+      <br />
+      <form action="">
+        <p>select your favorite browser</p>
+        <input list="browsers" />
+        <datalist id="browsers">
+          <option value="Internet Explorer"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+
+        <br />
+        <br />
+        <hr />
+      </form>
+    </form>
+    <form
+      action="
+    "
+    >
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" />
+      <input type="reset" />
+    </form>
+    <hr />
+    <hr />
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+    </form>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label>
+    </form>
+    <form>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+    </form>
+    <form>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+    </form>
+    <form>
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+      <input
+        type="date"
+        id="datemax"
+        name="datemax"
+        max="1979-12-31"
+      /><br /><br />
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02" />
+    </form>
+    <form>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+    </form>
+    <form>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" required />
+    </form>
+    <form>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </form>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+      <input type="submit" value="Submit" />
+    </form>
+    <form>
+      <label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth" />
+    </form>
+    <form>
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+    </form>
+    <form>
+      <label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch" />
+    </form>
+    <form>
+      <label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt" />
+    </form>
+    <form>
+      <label for="homepage">Add your homepage:</label>
+      <input type="url" id="homepage" name="homepage" />
+    </form>
+    <form>
+      <label for="week">Select a week:</label>
+      <input type="week" id="week" name="week" />
+    </form>
+    <!-- The input value attribute specifies an initial value for an input field: -->
+    <!-- The input readonly attribute specifies that an input field is read-only. -->
+    <!-- The input disabled attribute specifies that an input field should be disabled. -->
+    <!-- The input disabled attribute specifies that an input field should be disabled. -->
+    <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field./ -->
+  </body>
+</html>

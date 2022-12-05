@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        border: 3px solid red;
+        height: 60vh;
+
+        display: flex;
+        /* display: inline-flex; */
+
+        flex-direction: row;
+        /* raw is default direction */
+        /* row , row-reverse , col , col-reverse */
+
+        flex-wrap: wrap;
+        /* default - no-wrap */
+        /* warp , no-wrap , wrap-reverse */
+
+        /* overflow: hidden; */
+
+        flex-flow: row wrap;
+        /* defult row no wrap */
+        /* short hand for flex-direction and flex-wrap */
+
+        justify-content: center;
+        /* flex-start , flex-end, center , space-between , space-around , space-evenly */
+
+        align-items: center;
+
+        gap: 10px 10px;
+      }
+      p {
+        background-color: #1b1b1b;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        /* margin: 10px; */
+      }
+      .five {
+        /* order: -1; */
+        /* flex-grow: 2; */
+        /* // grow to fill out contanier */
+        /* flex-shrink: 5; */
+        align-self: center;
+        /* fs , fe , c ,baseline , stretch */
+      }
+    </style>
+    <title>flexbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="one">1</p>
+      <p class="two">2</p>
+      <p class="three">3</p>
+      <p class="four">4</p>
+      <p class="five">5</p>
+    </div>
+  </body>
+</html>

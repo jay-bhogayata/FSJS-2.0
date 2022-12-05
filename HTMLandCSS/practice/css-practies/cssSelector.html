@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css selector</title>
+    <style>
+      * {
+        background-color: #242b2e;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        background-color: #e03b8b;
+      }
+
+      .info {
+        background-color: #5a20cb;
+      }
+      #nice-quote {
+        background-color: #fff;
+        color: #242b2e;
+      }
+      span.bg-black.text-blue {
+        background-color: #1b1b1b;
+        color: #5a20cb;
+      }
+      tr,
+      td {
+        font-size: larger;
+        color: #ff8c00;
+      }
+      nav p span {
+        background-color: #fff;
+        color: #242b2e;
+        display: block;
+      }
+      div > li > p {
+        background-color: red;
+      }
+      .css-info + p {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css selectors</h1>
+    <p>this is my nice paragraph</p>
+    <p class="info">importent info</p>
+    <div>
+      <p id="nice-quote">time is money</p>
+    </div>
+    <span class="bg-black text-blue">wow</span>
+    <table border="2">
+      <tr>
+        <td>html</td>
+        <td>css</td>
+      </tr>
+      <tr>
+        <td>hyper text markup language</td>
+        <td>hyper text markup language</td>
+      </tr>
+    </table>
+    <nav>
+      <p><span>Jay Bhogayata</span></p>
+    </nav>
+    <div>
+      <li><p>Hello</p></li>
+    </div>
+      <div>
+        <p>html is used to give strctue to a webpage</p>
+        <p class="css-info">css is used to give style and colors to webpage</p>
+        <p><span> javascript </span> add intectivity in a webpage</p>
+      </div>
+  </body>
+</html>
