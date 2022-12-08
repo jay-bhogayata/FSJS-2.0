@@ -10,6 +10,8 @@
 
 [project-4](./HTMLandCSS/Assignments/Project-4/)
 
+[project-6](./HTMLandCSS/Assignments/Project-6/)
+
 ## tailwind css
 
 [vscode- website clone](./TailwindCSS/vscode-website-clone/)
