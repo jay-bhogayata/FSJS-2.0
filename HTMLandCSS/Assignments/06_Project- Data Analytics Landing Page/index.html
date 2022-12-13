@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataAnalytics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function toggle() {
+        let links = document.getElementsByTagName("li");
+        for (i = 0; i < links.length; i++) {
+          links[i].classList.toggle("hidden");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="nav-hero">
+      <nav>
+        <div class="logo">
+          <img src="./images/Logo.png" alt="logo-png" />
+          <img
+            id="hamburger-menu"
+            src="./images/hemberget-menu.svg"
+            alt="hamburger-menu"
+            class="nav-menu"
+            onclick="toggle()"
+          />
+        </div>
+        <div class="nav-list">
+          <ul type="none">
+            <li class="hidden">
+              About <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </li>
+            <li class="hidden">Pricing</li>
+            <li class="hidden">Contact US</li>
+            <li class="hidden">Login</li>
+            <li class="hidden"><button class="nav-btn">Start free trail</button></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="left">
+          <div class="tag">
+            <img src="./images/edit-brightness.svg" alt="star" />
+            <span> v3.1 released. <a href="#"> Learn more </a></span>
+          </div>
+          <h1>
+            Your data with <br />
+            real-time analytics
+          </h1>
+          <p>
+            Harness the potential of Big Data Analytics & Cloud Services and
+            become a data-driven organization with Needle tail
+          </p>
+          <div class="hero-btn-group">
+            <button class="free-trail-btn">Start free trial</button>
+            <button class="learn-more-btn">Learn more</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

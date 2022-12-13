@@ -14,6 +14,10 @@
 
 [project-6](./HTMLandCSS/Assignments/Project-6/)
 
+### Extra HTML And CSS Assignemnt
+
+[project-6](./HTMLandCSS/Assignments/06_Project-%20Data%20Analytics%20Landing%20Page/)
+
 ## tailwind css
 
 [vscode- website clone](./TailwindCSS/vscode-website-clone/)
