@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -114,6 +115,77 @@ a {
     width: 90%;
 }
 
+/* section 1 */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.eye-tag {
+    margin-top: 10px;
+    align-self: center;
+    display: flex;
+    gap: 15px;
+    color: #722ed1;
+    font-weight: 700;
+}
+.section-1 h1{
+    text-align: center;
+    margin: 1em 0em;
+}
+.sec1-sub-heading{
+    text-align: center;
+    color: gray;
+    padding:0% 30%;
+}
+.box-wrapper{
+    margin-top: 20px;
+    padding: 5% 18%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+}
+.box img{
+    width: 50px;
+}
+.box p{
+    color: gray;
+}
+
+.large-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 18%;
+}
+
+.large-box-wrapper{
+    width: 50vw;
+    padding: 0% 10%;
+}
+
+.large-box-info h3 {
+    font-size: 2.3rem;
+    padding: 20px 5px;
+}
+.large-box-info p{
+    color: gray;
+    padding: 0px 5px;
+
+}
+
+.large-box-wrapper-2{
+    width: auto;
+    padding: 0% 0%;
+}
 @media only screen and (max-width:1024px) {
     .nav-hero {
         height: auto;
@@ -122,6 +194,10 @@ a {
 
     .left {
         width: 50vw;
+    }
+    /* section1 */
+    .sec1-sub-heading{
+        padding: 0% 20%;
     }
 
 }
@@ -184,6 +260,25 @@ a {
         width: 60%;
     }
 
+    /* section1  */
+    .box-wrapper{
+        flex-direction: column;
+        padding: 0% 30%;
+    }
+    .sec1-sub-heading{
+        padding: 0% 10%;
+    }
+    .large-box{
+        flex-direction: column;
+        margin: 0% 10%;
+    }
+    .large-box-wrapper{
+        width: 80vw;
+        padding: 0% 0%;
+    }
+    .section-1-large-img{
+        width: 50vw;
+    }
 }
 
 
@@ -231,6 +326,14 @@ a {
         display: flex;
         justify-content: center;
     }
+    /* section1  */
+    .box-wrapper{
+        padding: 0% 15%;
+    }
+    .large-box{
+        margin: 0% 0%;
+    }
+       
 
 
 
