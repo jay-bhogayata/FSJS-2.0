@@ -25,3 +25,7 @@
 ## Git
 
 [git-Notes](./git/readme.md)
+
+## JavaScript
+
+[js-notes](./JavaScript/Notes.md)
