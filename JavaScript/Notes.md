@@ -130,3 +130,5 @@ Objects in JavaScript, just as in many other programming languages, can be compa
 In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object.
 
 Functions aren't special data structures in JavaScript — they are just a special type of object that can be called.
+
+![if-elseVSswitch](images/if-elseVSswitch.png)
