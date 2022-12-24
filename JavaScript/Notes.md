@@ -120,19 +120,19 @@ let name = "jay";
 - loops : for , while , do-while etc.
 - function
 
-js is case sensitive language.
+**js is case sensitive language.**
 
-js support UTF-16 encoding.
+**js support UTF-16 encoding.**
 
-Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+**Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.**
 
-In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object.
+**In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object.**
 
-Functions aren't special data structures in JavaScript — they are just a special type of object that can be called.
+**Functions aren't special data structures in JavaScript — they are just a special type of object that can be called.**
 
 ![if-elseVSswitch](images/if-elseVSswitch.png)
 
-falsy values (evaluated as false)
+### **falsy values (evaluated as false)**
 
 - false
 - undefined
@@ -142,3 +142,10 @@ falsy values (evaluated as false)
 - ""(Empty String)
 
 all other values including all object is is evaluated as true.
+
+### **Difference for..in and for..of**
+
+Both for..in and for..of are looping constructs which are used to iterate over data structures. The only difference between them is the entities they iterate over:
+
+1. for..in iterates over all enumerable property keys of an object
+2. for..of iterates over the values of an iterable object. Examples of iterable objects are arrays, strings, and NodeLists.
