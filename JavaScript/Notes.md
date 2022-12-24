@@ -101,9 +101,8 @@ let name = "jay";
 **non blocking event loop.**
 
 - async , promise etc
-  
+
   [video](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=8s)
-  
 
 [video](https://www.youtube.com/watch?v=FSs_JYwnAdI)
 
@@ -114,12 +113,12 @@ let name = "jay";
 
 ### Basic pillar's of any programming language
 
-  - value : 12,2.5,"jay" etc..
-  - variable : placeholder of a value
-  - operation : + , - , == , \* etc..
-  - decision : if , else , if else ladder etc.
-  - loops : for , while , do-while etc.
-  - function
+- value : 12,2.5,"jay" etc..
+- variable : placeholder of a value
+- operation : + , - , == , \* etc..
+- decision : if , else , if else ladder etc.
+- loops : for , while , do-while etc.
+- function
 
 js is case sensitive language.
 
@@ -132,3 +131,14 @@ In JavaScript, functions are first-class objects, because they can have properti
 Functions aren't special data structures in JavaScript — they are just a special type of object that can be called.
 
 ![if-elseVSswitch](images/if-elseVSswitch.png)
+
+falsy values (evaluated as false)
+
+- false
+- undefined
+- null
+- 0
+- NaN
+- ""(Empty String)
+
+all other values including all object is is evaluated as true.
