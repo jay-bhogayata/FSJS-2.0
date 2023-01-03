@@ -1,5 +1,5 @@
-# full stack javascript BootCamp 2.0
-
+# Full stack JavaScript BootCamp 2.0
+This repo is made to show case the project of bootcamp!
 ## HTML and CSS
 
 [project-1](./HTMLandCSS/Assignments/Project-1/)
