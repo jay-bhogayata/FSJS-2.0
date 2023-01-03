@@ -7,121 +7,119 @@
 => array copy operation perform shallow copy
 */
 
-let fruits = ["apple", "banana", "cherry", "mango"];
-console.log(typeof fruits);
+// how to create array
 
-console.log(fruits.length);
+// method 1
+let fruitList = ["apple", "banana", "kiwi", "greps"];
 
-console.log(fruits[0]); // or console.log(fruits["0"]) works same way
-console.log(fruits[fruits.length - 1]);
+// method 2
+let user = new Array(4); // create new array with 4 empty slot
+user = ["John", 21, "NYC"]; // it resize to 3
 
-console.log(fruits["1"]);
-console.log(fruits["01"]); //this will not work bcz "01" is arbitrary value
+console.log(fruitList);
+console.log(user);
 
-// array properties
+// length of array
+console.log(fruitList.length);
+user.length = 10; // inc length of user array to 10
+console.log(user, user.length);
 
+// index and access value using index
+console.log(fruitList[0]); // 1st element
+console.log(fruitList[fruitList.length - 1]); // last element
+console.log(user["1"]); // this is also valid give first element of user array
+console.log(user["01"]); // not give the element
+
+// reverse() => reverse the actual array and return it
+console.log(fruitList.reverse());
+console.log(fruitList);
+
+// sort() => sort the original array and return
+// first convert every element to string and then use seq of utf-16 to sort in aesc. order
+let numList = [1, 3, 5, 6, 7, 8, 31];
+// console.log(numList.sort());
+console.log(numList.sort((a, b) => a - b));
+// fn value > 0 sort => ba
+// fn value < 0 sort => ab
+// fn value === 0 keep as it is
+console.log(numList);
+
+// fill => fill the element , change og array
+fruitList = ["apple", "banana", "kiwi", "greps"];
+// console.log(fruitList.fill(0)); //fill all place
+console.log(fruitList.fill(0, 1, 2)); // fill 0 , start from 1 go till 2
+console.log(fruitList.fill(0, 2)); // fill 0 , start from 2 go till end
+
+//join => not change og array , convert array into string
+fruitList = ["apple", "banana", "kiwi", "greps"];
+console.log(fruitList.join());
+console.log(fruitList.join("-")); // in "" give ant delimiter
+console.log(fruitList);
+
+//toString()
+user = ["john", 20, "NYC"];
+console.log(user.toString());
+
+// pop() => remove last element and return it, change og array
+console.log(fruitList.pop());
+console.log(fruitList);
+
+// shift() => remove 1st(0th index) element and return it , change og array
+console.log(fruitList.shift());
+console.log(fruitList);
+
+//push() => push element at last of og array return size of array
+console.log(fruitList.push("apple"));
+console.log(fruitList);
+console.log(fruitList.push("avocado", "watermelon"));
+console.log(fruitList);
+
+//unshift() => add the element (one or more) at start and return length of array
+console.log(fruitList.unshift("greps"));
+console.log(fruitList);
+fruitList.unshift("coconut", "oranges");
+console.log(fruitList);
+
+// concat() => merge to or more array not modify og array , return shallow copy
 let arr1 = ["IND", "USA", "UK"];
 let arr2 = ["AUS", "CN", "FRN"];
-
-// concat
 console.log(arr1.concat(arr2)); // return new array
 let arr3 = arr1.concat(arr2);
 console.log(arr3);
 
-
-
-//copyWithin
-arr = ["apple", "banana", "cheery", "mango", "greps"];
-console.log(arr.copyWithin(0, 1, 2)); // return modified arr
-arr = ["apple", "banana", "cheery", "mango", "greps"];
-console.log(arr.copyWithin(1, 3));
-
-
-// every()
-const isEven = (num) => {
-  num % 2 === 0;
-};
-console.log(Boolean(isEven(12))); // return true
-num = [1, 2, 3, 4, 5, 6];
-console.log(num.every(isEven)); // false bcz all are not even
-num = [2, 4, 6, 8];
-console.log(num.every(isEven)); // true bcz all values are even
-// some()=> if one item pass the fn return true
-let num = [1, 2, 3, 4, 5, 6];
-
-
-// filter
-let numGtThen3 = num.filter((n) => n > 3);
-console.log(numGtThen3);
-
-// map() => not modify og array
-num = [1, 2, 3, 4];
-console.log(num.map((n) => n + 1));
-console.log(num);
-
-// reduce() =>
-const sum = (n1, n2) => {
-  return n1 + n2;
-};
-console.log(num.reduce(sum));
-
-
-let arr = [
-  "a",
-  "b",
-  "c",
-  ["d", "e", "f", ["g", "h", "i", ["Jay", ["abc", ["def"]]]]],
-];
-
-// flat
-
-console.log(arr.flat()); // return new array
-console.log(arr.flat(2));
-console.log(arr.flat(3));
-console.log(arr.flat(Infinity));
-
-
-
-// flatMap => Map + filter
-arr = [1, 2, [3, 4]];
-console.log(arr.flatMap((n) => n * n)); // first apply fun then then flat it
-
-
-
-// foreach => not modify og array
-num.forEach((n) => console.log(n));
-num.forEach((n) => console.log(n * 2));
-
-
+//splice() => modify arr , splice(start, deleteCount, item1, item2, itemN)
+fruits = ["apple", "banana", "cherry", "mango"];
+// console.log(fruitList.splice(0));
+// console.log(fruit.splice(0, 2));
+console.log(fruits.splice(0, 3, "kiwi", "watermelon"));
+console.log(fruits);
 
 // indexOf() => return first index if found else -1 (use ===)
 arr1 = ["IND", "USA", "UK", "IND"];
 console.log(arr1.indexOf("UK"));
 console.log(arr1.indexOf("CN"));
 console.log(arr1.indexOf("IND")); // only return 0 (first index)
+console.log(arr1.indexOf("IND", 2)); // start searching from index 2
 //lastIndexOf()
 console.log(arr1.lastIndexOf("IND"));
 
+// Array.of() => create new array from var as args
+console.log(Array.of("John", 25, "NYC"));
 
+//slice() => not modify og array
+fruitList = ["apple", "banana", "kiwi", "greps"];
+console.log(fruitList.slice()); // whole array
+console.log(fruitList.slice(-1)); // start index
+console.log(fruitList.slice(0, 1)); // start index, end index
+console.log(fruitList);
 
-// reverse => change og array
-let names = ["Albert", "bob", "carl", "Daisy"];
-arr = names.reverse();
-console.log(names, arr);
+// findIndexOf() => return 1st index that satisfy condition
+nums = [3, 5, 12, 6, 7, 8];
+console.log(nums.findIndex((e) => e % 2 === 0));
+// find() => return 1st item that satisfy condition
+console.log(nums.find((e) => e % 2 === 0));
 
-//slice() => return shallow copy of arr
-console.log(names.slice());
-console.log(names.slice(-1));
-console.log(names.slice(0, 1));
-
-//splice() => modify arr
-fruits = ["apple", "banana", "cherry", "mango"];
-console.log(fruits.splice(0, 3, "kiwi", "watermelon"));
-console.log(fruits);
-
-// sort()
-fruits = ["watermelon", "kiwi", "apple", "banana", "cherry", "mango"];
-console.log(fruits.sort());
-nums = [10, 2, 31, 4, 50, 9, 7, 6, 9, 100];
-console.log(nums.sort((a, b) => a - b));
-
+// includes()
+nums = [3, 5, 12, 6, 7, 8];
+console.log(nums.includes(5));
+console.log(nums.includes(5, 2)); //(key,startIndex)
