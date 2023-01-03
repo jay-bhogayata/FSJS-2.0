@@ -123,3 +123,79 @@ console.log(nums.find((e) => e % 2 === 0));
 nums = [3, 5, 12, 6, 7, 8];
 console.log(nums.includes(5));
 console.log(nums.includes(5, 2)); //(key,startIndex)
+
+//Array.isArray
+console.log(Array.isArray(nums));
+console.log(Array.isArray(1));
+
+let num = [1, 2, 3, 4, 5, 6];
+// filter => not modify array
+let numGtThen3 = num.filter((n) => n > 3);
+console.log(numGtThen3);
+
+// map() => not modify og array
+num = [1, 2, 3, 4];
+console.log(num.map((n) => n + 1));
+console.log(num);
+
+// reduce() => not modify og array
+nums = [1, 2, 3, 4];
+const add = nums.reduce((total, n) => {
+  console.log(`${total}`);
+  return total + n;
+}, 100); // here 100 is start value for total
+console.log(add);
+
+// loop through array
+for (i = 0; i < fruitList.length; i++) {
+  console.log(fruitList[i]);
+}
+
+// foreach()
+fruitList.forEach((e) => {
+  console.log(e);
+});
+
+// every()
+const isEven = (n) => {
+  return n % 2 === 0;
+};
+console.log(isEven(12)); // return true
+num = [1, 2, 3, 4, 5, 6];
+console.log(num.every(isEven)); // false bcz all are not even
+num = [2, 4, 6, 8];
+console.log(num.every(isEven)); // true bcz all values are even
+// some()=> if one item pass the fn return true
+
+num = [1, 2, 3, 4, 5, 6];
+console.log(num.some(isEven)); // checks whether the numbers array contain at least one even number
+
+let arr = [
+  "a",
+  "b",
+  "c",
+  ["d", "e", "f", ["g", "h", "i", ["Jay", ["abc", ["def"]]]]],
+];
+
+// flat
+
+console.log(arr.flat()); // return new array
+console.log(arr.flat(2)); // 2 level
+console.log(arr.flat(3));
+console.log(arr.flat(Infinity));
+
+// flatMap => Map + filter
+arr = [1, 2, [3, 4]];
+console.log(arr.flatMap((n) => n * n)); // first apply fun then then flat it
+
+// toLocalString
+let time = [1, "js", new Date()];
+time = time.toLocaleString();
+console.log(time);
+
+//copyWithin()
+console.log([1, 2, 3, 4, 5].copyWithin(0, 3, 4)); //(target,start,end)
+// [4, 2, 3, 4, 5]
+
+//Array.from
+console.log(Array.from("jay"));
