@@ -98,7 +98,7 @@ let name = "jay";
 
 - in simple word unused var function are removed from memory by the js engine.
 
-**non blocking event loop.**
+**non blocking event loop.(concurrent)**
 
 - async , promise etc
 
@@ -149,3 +149,36 @@ Both for..in and for..of are looping constructs which are used to iterate over d
 
 1. for..in iterates over all enumerable property keys of an object
 2. for..of iterates over the values of an iterable object. Examples of iterable objects are arrays, strings, and NodeLists.
+
+### function
+
+- fundamental building block
+
+- defining a function
+
+```javascript
+function(keyword) nameOfFunc(args or parameters)
+{
+  //body
+  // one or more statements
+  return ans
+}
+```
+
+- calling a function
+
+```javascript
+nameOfFunc(arg1);
+```
+
+- Parameters are essentially passed to functions by value — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, the change is not reflected globally or in the code which called that function.
+
+- but if we pass object as parameter change in them reflect globally
+
+![obj](./images/changeobj.png)
+
+- Variables defined inside a function cannot be accessed from anywhere outside
+
+- arrow function  does not have its own this, arguments, super, or new.target
+
+- some built in function : eval(),isFinite(),isNaN(),parseInt(),decodeURI(),encodeURI()
