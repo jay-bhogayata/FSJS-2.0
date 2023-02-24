@@ -46,8 +46,6 @@ console.log(isNaN("Jay")); // return true bcz js can not convert "jay" to number
 isNaN first converts the provided value to Number and if its anything other than NaN, it returns false.
 */
 
-
-
 // 2. null -> absence of object
 let x = null;
 console.log(null === 0); // return false
@@ -73,6 +71,10 @@ console.log(typeof bigInt);
 let myName = "Jay";
 console.log(typeof myName);
 console.log(myName[0]);
+
+// 2nd way to define string
+let str = new String("jay");
+console.log(`the string is ${str} and type of it is ${typeof str}`);
 
 // // 7. symbol
 // // unique and immutable primitive value , The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.

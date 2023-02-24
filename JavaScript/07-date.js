@@ -1,5 +1,5 @@
 console.log(Date()); // = new Date().toString()
-console.log(Date()); // type string
+console.log(typeof Date()); // type string
 let now = new Date();
 console.log(now); // type object
 

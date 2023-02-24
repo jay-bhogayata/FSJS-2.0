@@ -1,14 +1,14 @@
 /*
 => expression is a valid unit of code that resolves to a value. example `a = 5`
-=> x = 2 + 3  ,  2 and 3 is oprand , + is operator
+=> x = 2 + 3  ,  2 and 3 is operand , + is operator
 => js has unary , binary and ternary operators
-=> unary -> one oprand (x++)
-=> binary -> two oprand (x+y)
+=> unary -> one operand (x++)
+=> binary -> two operand (x+y)
 
 */
 
 /* ------------------------------------------------------------------------------------*/
-// 1. Arithmatic operators
+// 1. Arithmetic operators
 let num1 = 10;
 let num2 = 5;
 console.log(`${num1} + ${num2} =  ${num1 + num2}`);
@@ -31,10 +31,10 @@ console.log(x--); // post dec
 console.log(x);
 
 let y = 10;
-console.log(-y); // urenary negation
+console.log(-y); // unary negation
 
 y = "10";
-console.log(+y); // urenary plus try to convernt oprand into number
+console.log(+y); // unary plus try to convert operand into number
 
 /* ------------------------------------------------------------------------------------*/
 
@@ -69,7 +69,7 @@ let val1 = 15;
 let val2 = "15";
 console.log(val1 == val2); // true
 console.log(val1 === val2); //false
-console.log(val1 != val2); // flase
+console.log(val1 != val2); // false
 console.log(val1 !== val2); // true
 
 let val3 = 12;
@@ -93,7 +93,7 @@ console.log(`${x}>>1 =  ${x >> 1}`); //return 011 = 3
 
 /* ------------------------------------------------------------------------------------*/
 
-// 5. Logical opeartors
+// 5. Logical operators
 
 a = true;
 let b = false;
@@ -116,7 +116,7 @@ console.log(link);
 
 /* ------------------------------------------------------------------------------------*/
 
-// 7. conditinoal operator (ternary operator)
+// 7. conditional operator (ternary operator)
 let age = 19;
 age > 18 ? console.log("You can vote") : console.log("you can not vote");
 

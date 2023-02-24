@@ -86,3 +86,22 @@ for (const i in names) {
 for (const i of names) {
   console.log(i);
 }
+
+// we can use the for...of loop in JavaScript to iterate over objects as well, but it is important to note that for...of is designed to work with iterable objects, which objects are not by default.
+
+const myObject = {
+  name: "Jay",
+  age: 20,
+};
+
+for (const [key, value] of Object.entries(myObject)) {
+  console.log(`${key}: ${value}`);
+}
+// Object.entries(myObject) is return array
+console.log(Object.entries(myObject));
+console.log(typeof Object.entries(myObject));
+
+const city = "NEW YORK CITY";
+for (i of city) {
+  console.log(i);
+}

@@ -2,6 +2,7 @@ function printHello() {
   console.log("Hello world");
 }
 printHello(); // calling the function
+console.log(typeof printHello);
 
 //function with perimeters and return
 function sum(n1, n2) {
