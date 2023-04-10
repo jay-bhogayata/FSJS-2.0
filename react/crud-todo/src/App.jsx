@@ -30,7 +30,7 @@ const App = () => {
         if (t.id == id) {
           return { ...t, isDone };
         }
-        return cTodos;
+        return t;
       });
     });
   };
