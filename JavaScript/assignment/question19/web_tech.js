@@ -1,0 +1,26 @@
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Angular",
+  "Vue",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "SQL",
+  "Bootstrap",
+  "jQuery",
+  "TypeScript",
+  "PHP",
+  "django",
+  "Ruby on Rails",
+  "Sass",
+  "Webpack",
+  "Babel",
+  "Gulp",
+  "npm",
+  "yarn",
+];
+
+module.exports = webTechs;
